@@ -12,7 +12,6 @@
 
 
   <style>
-
     A {
       text-decoration: none;
       color: #ff9f12;
@@ -23,14 +22,11 @@
       text-decoration: none;
     }
 
-    .content {
-      border-radius: 15px;
-      margin-left: 150px;
-      background-color: whitesmoke;
-      margin-right: 150px;
-      margin-top: 10px;
-      padding: 20px;
-      height: auto;
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
     }
   </style>
 
@@ -40,10 +36,62 @@
 </head>
 
 <body>
-  <div class="content">
+  <div class="container">
 
-    <div style="float:left;">
-      <img src="logo.png" height="200px" width="200px">
+    <div class="row">
+
+      <div class="col-sm-8">
+        <img src="logo.png" height="100px" width="100px">
+      </div>
+      <!-- <div class="col-sm-4">
+        <img height="80px" width="80px" src="android-logo.png">
+      </div> -->
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <!-- <th scope="col"></th> -->
+              <th scope="col">Categoria</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!-- <th scope="row">1</th> -->
+              <td>Finanças</td>
+              <td><a href="https://play.google.com/store/apps/details?id=com.tapforapp.consultabolsafamilia">
+                  Consulta Bolsa Família 2020</a></td>
+              <td style="font-weight: bold;">Publicado</td>
+            </tr>
+            <tr>
+              <!-- <th scope="row">2</th> -->
+              <td>Finanças</td>
+              <td><a
+                  href="https://play.google.com/store/apps/details?id=com.tapforapp.calculadorareducaosalarial">Calcula
+                  Redução Salarial MP 936</a></td>
+              <td style="font-weight: bold;">Publicado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="row footer">
+      <div class="col-sm-12 text-center">
+        Copyright © 2020 Tap for App - Todos os direitos reservados <br />
+        <a href="politicaprivacidade.html">Política de Privacidade</a>
+      </div>
+    </div>
+
+    <!-- <div style="float:left;">
+      <img src="logo.png" height="100px" width="100px">
     </div>
 
     <div style="float: left; margin-left: 50px;">
@@ -54,40 +102,15 @@
       <a href="https://www.flaticon.com/" title="Flaticon">
         <img height="80px" width="80px" src="android-logo.png">
       </a>
-    </div>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th scope="col"></th>
-          <th scope="col">Categoria</th>
-          <th scope="col">Nome</th>
-          <th scope="col">Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Social</td>
-          <td><a href="https://play.google.com/store/apps/details?id=com.tapforapp.consultabolsafamilia">Bolsa Família -
-              Consulta Benefício 2020</a></td>
-          <td style="font-weight: bold;">Publicado</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Finanças</td>
-          <td><a href="https://play.google.com/store/apps/details?id=com.tapforapp.calculadorareducaosalarial">Calcula
-              Redução Salarial MP 936</a></td>
-          <td style="font-weight: bold;">Publicado</td>
-        </tr>
-      </tbody>
-    </table>
+    </div> -->
 
+    <!-- 
     <div style="font-weight: bold; margin-top: 100px; text-align: center; font-size: 12px; color:#0eadf4;">
       <div><span>Contato:</span> tapforapp@gmail.com </div>
       <div>
         Copyright © 2020 Tap for App - Todos os direitos reservados <br /> <a href="politicaprivacidade.html">Política de Privacidade</a>
       </div>
-    </div>
+    </div> -->
 
   </div>
 
